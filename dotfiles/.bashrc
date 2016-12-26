@@ -1,0 +1,5 @@
+alias ls='ls --color=auto'
+alias l='ls -lah'
+alias ll='ls -lh'
+alias vi='vim'
+PS1='\[\e[01;33m\][\h \u:\[\e[01;34m\]\w\[\e[01;33m\]]\[\e[00m\]\$'

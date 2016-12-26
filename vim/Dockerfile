@@ -3,11 +3,11 @@ FROM alpine:latest
 MAINTAINER Sree <sree@aletilabs.com>
 
 #set env variables
-ENV BUILD_PACKAGES build-deps build-base make libxpm-dev libx11-dev libxt-dev ncurses-dev git
+ENV BUILD_PACKAGES build-deps build-base make libxpm-dev libx11-dev libxt-dev ncurses-dev ncurses-terminfo
 ENV PYTHON_PACKAGES python python-dev python3 python3-dev ctags
 ENV RUBY_PACKAGES ruby ruby-dev ruby-libs
 ENV PERL_PACKAGES perl perl-dev
-ENV MISC_PACKAGES git openssh-client tmux bash-completion
+ENV MISC_PACKAGES git openssh-client tmux bash-completion curl
 
 # install,clone,configure,build,delete and create packages and dir
 RUN apk add --update --virtual $BUILD_PACKAGES $PYTHON_PACKAGES $RUBY_PACKAGES  \
