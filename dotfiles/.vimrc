@@ -11,7 +11,6 @@ filetype plugin on
 " THEME & LAYOUT
 colorscheme Tomorrow-Night
 set guifont=Menlo\ Regular:h18
-set lines=35 columns=150
 set colorcolumn=90
 set number
 syntax on
@@ -84,3 +83,10 @@ au BufNewFile,BufRead *.es6 set filetype=javascript
 " SWITCH SCHEME
 map <Leader>l :colorscheme Tomorrow<CR>
 map <Leader>k :colorscheme Tomorrow-Night<CR>
+set rtp+=$HOME/.local/lib/python3.5/site-packages/powerline/bindings/vim/
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+
+
+" Fix backspace.
+set backspace=indent,eol,start
