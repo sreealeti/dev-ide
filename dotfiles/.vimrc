@@ -72,7 +72,8 @@ map <leader>s :source ~/.vimrc<CR>
 
 " CONTROL+T
 set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*,_build/*,deps/*,node_modules/*
-noremap <Leader>r :CommandTFlush<CR>
+noremap <Leader>t :CtrlP<CR>
+let g:ctrlp_working_path_mode = 'ra'
 
 " RAILS
 map <leader>a :AV<CR>
@@ -83,10 +84,13 @@ au BufNewFile,BufRead *.es6 set filetype=javascript
 " SWITCH SCHEME
 map <Leader>l :colorscheme Tomorrow<CR>
 map <Leader>k :colorscheme Tomorrow-Night<CR>
-set rtp+=$HOME/.local/lib/python3.5/site-packages/powerline/bindings/vim/
-let g:Powerline_symbols = 'fancy'
-set laststatus=2
 
 
 " Fix backspace.
 set backspace=indent,eol,start
+
+" AIRLINE SCHEME
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='wombat'
+let g:airline#extensions#tabline#enabled = 1

@@ -26,10 +26,7 @@ RUN apk add --update --virtual $BUILD_PACKAGES $PYTHON_PACKAGES $RUBY_PACKAGES $
     make 				                                     && \
     make install                                                             && \
     rm -rf /var/cache/* /var/log/* /var/tmp/*                                && \
-    mkdir /var/cache/apk && mkdir /root/edit-files
-
-#change working dir
-WORKDIR /root/edit-files
+    mkdir /var/cache/apk
 
 #start container with vim
 ENTRYPOINT ["vim"]
