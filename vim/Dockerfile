@@ -3,11 +3,11 @@ FROM alpine:latest
 MAINTAINER Sree <sree@aletilabs.com>
 
 #set env variables
-ENV BUILD_PACKAGES build-deps build-base make libxpm-dev libx11-dev libxt-dev ncurses-dev ncurses-terminfo
+ENV BUILD_PACKAGES build-deps build-base make libxpm-dev libx11-dev libxt-dev zlib-dev ncurses-dev ncurses-terminfo
 ENV PYTHON_PACKAGES python3 python3-dev ctags
-ENV RUBY_PACKAGES ruby ruby-dev ruby-libs
+ENV RUBY_PACKAGES ruby ruby-dev ruby-libs ruby-io-console libffi-dev
 ENV PERL_PACKAGES perl perl-dev
-ENV MISC_PACKAGES git openssh-client tmux bash-completion curl wget
+ENV MISC_PACKAGES git openssh-client tmux bash-completion sudo curl wget
 ENV TERM xterm-256color
 ENV LANG en_US.UTF-8
 
