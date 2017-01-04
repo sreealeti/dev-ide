@@ -34,6 +34,8 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
+set cursorline
+
 autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
 " SYNTASTIC
