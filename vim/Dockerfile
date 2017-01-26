@@ -1,4 +1,4 @@
-FROM alpine:3.4.6
+FROM alpine:3.4
 
 MAINTAINER Sree <sree@aletilabs.com>
 
