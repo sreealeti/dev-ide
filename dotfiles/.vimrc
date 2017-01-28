@@ -36,6 +36,11 @@ set smartindent
 set autoindent
 set cursorline
 
+" BUFFERS
+map <leader>n :bn<CR>
+map <leader>m :bp<CR>
+map <leader>d :bd<CR>
+
 autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
 " SYNTASTIC
@@ -51,8 +56,8 @@ map <Leader>C :SyntasticCheck <CR>
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
-nmap <leader>, :NERDTreeToggle<CR>
-nmap <leader>j :NERDTreeFind<CR>
+nmap <leader>j :NERDTreeToggle<CR>
+nmap <leader>, :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.git', '\.sass-cache', '\.swp']
 if has("gui_macvim")
   autocmd VimEnter * NERDTree
@@ -84,8 +89,8 @@ map <leader>a :AV<CR>
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
 " SWITCH SCHEME
-map <Leader>l :colorscheme Tomorrow<CR>
-map <Leader>k :colorscheme Tomorrow-Night<CR>
+map <Leader>l :colorscheme base16-eighties<CR>
+map <Leader>k :colorscheme base16-solarized-dark<CR>
 
 
 " Fix backspace.
