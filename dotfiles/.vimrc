@@ -9,7 +9,7 @@ filetype on
 filetype plugin on
 
 " THEME & LAYOUT
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Eighties
 set guifont=Menlo\ Regular:h18
 set colorcolumn=90
 set number
@@ -89,8 +89,8 @@ map <leader>a :AV<CR>
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
 " SWITCH SCHEME
-map <Leader>l :colorscheme base16-eighties<CR>
-map <Leader>k :colorscheme base16-solarized-dark<CR>
+map <Leader>l :colorscheme Monokai<CR>
+map <Leader>k :colorscheme PaperColor<CR>
 
 
 " Fix backspace.
