@@ -41,6 +41,14 @@ map <leader>n :bn<CR>
 map <leader>m :bp<CR>
 map <leader>d :bd<CR>
 
+" WINDOWS
+map <leader>v :vsplit<CR>
+
+
+" FOLDINGS
+set foldmethod=syntax
+set foldlevelstart=20
+
 autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
 " SYNTASTIC
@@ -56,8 +64,8 @@ map <Leader>C :SyntasticCheck <CR>
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
-nmap <leader>j :NERDTreeToggle<CR>
-nmap <leader>, :NERDTreeFind<CR>
+nmap <leader>, :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.git', '\.sass-cache', '\.swp']
 if has("gui_macvim")
   autocmd VimEnter * NERDTree
