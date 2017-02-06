@@ -43,7 +43,9 @@ map <leader>d :bd<CR>
 
 " WINDOWS
 map <leader>v :vsplit<CR>
-
+map <leader><A-Left> :wincmd h<CR>
+map <leader><A-Right> :wincmd l<CR>
+map <leader>q :wincmd q<CR>
 
 " FOLDINGS
 set foldmethod=syntax
