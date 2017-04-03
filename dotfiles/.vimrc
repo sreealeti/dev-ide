@@ -15,6 +15,20 @@ set colorcolumn=90
 set number
 syntax on
 
+" SWITCH SCHEME
+map <Leader>l :colorscheme Monokai<CR>
+map <Leader>k :colorscheme PaperColor<CR>
+
+
+" Fix backspace.
+set backspace=indent,eol,start
+
+" AIRLINE SCHEME
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_eighties'
+let g:airline#extensions#tabline#enabled = 1
+
 " SEARCH
 set hlsearch
 
@@ -98,16 +112,5 @@ map <leader>a :AV<CR>
 " ES6
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
-" SWITCH SCHEME
-map <Leader>l :colorscheme Monokai<CR>
-map <Leader>k :colorscheme PaperColor<CR>
-
-
-" Fix backspace.
-set backspace=indent,eol,start
-
-" AIRLINE SCHEME
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_eighties'
-let g:airline#extensions#tabline#enabled = 1
+" JSX
+let g:jsx_ext_required=0
