@@ -65,6 +65,8 @@ set foldlevelstart=20
 autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
 "GITGUTTER
+"disable gitgutter
+let g:gitgutter_enabled = 0
 let g:gitgutter_grep_command = 'grep -e'
 let g:gitgutter_sign_column_always=1
 
