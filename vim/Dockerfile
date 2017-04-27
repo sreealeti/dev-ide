@@ -3,7 +3,7 @@ FROM alpine:3.4
 MAINTAINER Sree <sree@aletilabs.com>
 
 #set env variables
-ENV BUILD_PACKAGES build-deps build-base make libxpm-dev libx11-dev libxt-dev zlib-dev ncurses-dev ncurses-terminfo
+ENV BUILD_PACKAGES build-deps build-base make cmake llvm mono libxpm-dev libx11-dev libxt-dev zlib-dev ncurses-dev ncurses-terminfo
 ENV PYTHON_PACKAGES python3 python3-dev ctags
 ENV RUBY_PACKAGES ruby ruby-dev
 ENV PERL_PACKAGES perl perl-dev
