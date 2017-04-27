@@ -2,7 +2,7 @@ FROM sree/dev-ide:latest
 
 MAINTAINER Sree <sree@aletilabs.com>
 
-ENV RAILS_PACKAGES ruby-libs mysql-dev mysql-client sqlite-dev nodejs ruby-io-console libffi-dev  \
+ENV RAILS_PACKAGES ruby-libs mysql-dev mysql-client sqlite-dev ruby-io-console libffi-dev  \
     tzdata ruby-json ruby-bigdecimal ruby-irb libxml2-dev
 
 
