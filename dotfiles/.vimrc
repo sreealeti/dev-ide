@@ -70,6 +70,16 @@ let g:gitgutter_enabled = 0
 let g:gitgutter_grep_command = 'grep -e'
 let g:gitgutter_sign_column_always=1
 
+" YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
 " SYNTASTIC
 let g:syntastic_mode_map = { 'mode': 'active',
                             \ 'active_filetypes': ['es6', 'javascript'],
