@@ -1,6 +1,9 @@
 " LOADING
 execute pathogen#infect()
 
+" remove delays
+set timeoutlen=100 ttimeoutlen=0
+
 " LEADER
 let mapleader=" "
 
@@ -9,16 +12,11 @@ filetype on
 filetype plugin on
 
 " THEME & LAYOUT
-colorscheme Tomorrow-Night-Eighties
+colorscheme gruvbox
 set guifont=Menlo\ Regular:h18
 set colorcolumn=90
 set number
 syntax on
-
-" SWITCH SCHEME
-map <Leader>l :colorscheme Monokai<CR>
-map <Leader>k :colorscheme PaperColor<CR>
-
 
 " Fix backspace.
 set backspace=indent,eol,start
@@ -57,6 +55,7 @@ map <leader>d :bd<CR>
 
 " WINDOWS
 map <leader>v :vsplit<CR>
+map <leader>h :sp<CR>
 
 " FOLDINGS
 set foldmethod=syntax
