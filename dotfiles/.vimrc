@@ -2,7 +2,7 @@
 execute pathogen#infect()
 
 " remove delays
-set timeoutlen=100 ttimeoutlen=0
+set timeoutlen=300 ttimeoutlen=0
 
 " LEADER
 let mapleader=" "
