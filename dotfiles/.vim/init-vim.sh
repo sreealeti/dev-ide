@@ -8,4 +8,4 @@ done
 #compile youcompleteme
 cd $HOME/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
-python3.5 install.py --tern-completer
+python3.6 install.py --tern-completer
