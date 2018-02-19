@@ -27,6 +27,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_eighties'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
 
 " SEARCH
 set hlsearch
@@ -67,7 +68,7 @@ autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 "disable gitgutter
 let g:gitgutter_enabled = 0
 let g:gitgutter_grep_command = 'grep -e'
-let g:gitgutter_sign_column_always=1
+set signcolumn=yes
 
 " YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
