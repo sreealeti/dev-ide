@@ -7,7 +7,7 @@ ENV BUILD_PACKAGES build-deps build-base make cmake llvm libxpm-dev libx11-dev l
 ENV PYTHON_PACKAGES python3 python3-dev ctags
 ENV RUBY_PACKAGES ruby ruby-dev nodejs
 ENV PERL_PACKAGES perl perl-dev
-ENV MISC_PACKAGES git openssh-client tmux bash-completion sudo curl wget
+ENV MISC_PACKAGES git openssh-client tmux bash-completion sudo curl wget rsync
 ENV TERM xterm-256color
 ENV LANG en_US.UTF-8
 

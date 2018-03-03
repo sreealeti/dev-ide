@@ -7,6 +7,8 @@ ENV RAILS_PACKAGES ruby-libs mysql-dev mysql-client sqlite-dev ruby-io-console l
 
 
 RUN sudo apk add --update $RAILS_PACKAGES                 && \
+    sudo rm -rf /var/cache/* /var/log/* /var/tmp/*        && \
+    sudo mkdir /var/cache/apk                             && \
     sudo gem install -N bundler rails
 
 #start container with bash
