@@ -65,7 +65,7 @@
 	rso = remote show origin
 	rpo = remote prune origin
 	w = show
-	meldon = config diff.external /home/pkumar/.diff.py
+	meldon = config diff.external /home/dev/.diff.py
 	meldof = config --remove-section diff
 	human = name-rev --name-only --refs=refs/heads/*
 [color]
