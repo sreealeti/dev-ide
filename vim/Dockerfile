@@ -1,11 +1,11 @@
-FROM alpine:3.11
+FROM alpine:3.13
 
 MAINTAINER Sree <sree@aletilabs.com>
 
 #set env variables
 ENV BUILD_PACKAGES build-deps build-base make cmake llvm libxpm-dev libx11-dev libxt-dev zlib-dev ncurses-dev ncurses-terminfo
 ENV PYTHON_PACKAGES python3 python3-dev ctags
-ENV RUBY_PACKAGES ruby ruby-dev nodejs npm
+ENV RUBY_PACKAGES ruby ruby-dev ruby-full nodejs npm
 ENV PERL_PACKAGES perl perl-dev
 ENV MISC_PACKAGES git openssh-client tmux bash-completion sudo curl wget rsync go
 ENV TERM xterm-256color
